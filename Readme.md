@@ -1,6 +1,6 @@
 # **Tailwind Fundamentals & Configure Tailwind CSS**
 ## 1. **Install Tailwind CSS in a project & configure**
-Tailwind CSS is already installed in Next.js. When we use Tailwind CSS in another project, we have to install it separately.
+Tailwind CSS is already installed in Next.js. When we use Tailwind CSS in another framework, we have to install it separately.
 ## 2. **Understand utility-first CSS** ##
 Utility-first CSS is a CSS approach where small, single-purpose utility classes are combined directly in HTML to create the desired design.<br>
 ### For example
@@ -77,3 +77,26 @@ leading-normal → normal
 leading-relaxed → more space
 leading-loose → much more space
 ```
+## 9. **Set letter spacing**
+In Tailwind CSS, you can set letter spacing using `tracking-*` classes.
+```
+<h1 className="text-4xl font-bold tracking-widest">
+  Hello World
+</h1>
+```
+tracking-widest → tracking-wide → tracking-tight
+## 10. **Set element widght**
+In Tailwind CSS, you can set element widght using `w-*` classes.
+```
+<h1 className="w-96">
+  Hello World
+</h1>
+```
+## 11. **Set element height**
+In Tailwind CSS, you can set element height using `h-*` classes.
+```
+<h1 className="h-96">
+  Hello World
+</h1>
+```
+## 12. **Set minimum/maximum width**
