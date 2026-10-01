@@ -48,8 +48,8 @@ Tailwind CSS's inline utility makes an element an inline-level element.
   </span>
 </div>
 ```
-**Here:**
-*`inline* → keeps the element on **the same line**.<br>
+**Here:**<br>
+*`inline` → keeps the element on **the same line**.
 It normally takes only the **width required by its content**.<br>
 The next inline element can **appear on the same line**.<br>
 **Simple rule:**<br>
@@ -178,3 +178,58 @@ Tailwind CSS mein **justify-* utilities** ka use **flex ya grid items ko main ax
 **Simple rule**:<br>
 *`justify-*` → Items ko** main axis par position/align karne ke** liye use hota hai.<br>
 Important: Agar **flex-row hai**, to main **axis horizontal hoti hai**. Agar **flex-col** hai, to** main axis vertical** hoti hai.
+## 10. **Use items-**
+Tailwind CSS's **items-* utilities** are used to align **flex or grid items along the cross axis**.
+**Example**
+```
+<div class="flex items-center h-40">
+  <p class="bg-blue-500 p-4">One</div>
+  <p class="bg-red-500 p-4">Two</div>
+  <div class="bg-green-500 p-4">Three</div>
+</div>
+```
+**Common classes**<br>
+*`items-start` → Aligns items **at the start**.<br>
+*`items-center` → Aligns items **at the center**.<br>
+*`items-end` → Aligns items **at the end**.<br>
+*`items-baseline` → Aligns items **along the text baseline**.<br>
+*`items-stretch` → Stretches items to **fill the available cross-axis space**.<br>
+**Example**
+```
+<div class="flex items-center h-40">
+  <p>Logo</p>
+  <p>Menu</p>
+</div>
+```
+**Here:**<br>
+*`flex` → **Enables the Flexbox layout**.<br>
+*`items-center` → **Vertically centers the items (in row direction)**.<br>
+**Simple rule:**
+*`items-*` → Used to align items **along the cross axis**.<br>
+**Difference**<br>
+*`justify-*` → **Main axis**<br>
+*`items-*` → **Cross axis**
+## 11. **Use content-**
+In Tailwind CSS, **`content-*` utilities** are used with **Flexbox and Grid to align the entire group** of items along the **cross axis when there is extra space in the container**.<br>
+They work when the container has multiple rows or columns, usually with flex-wrap or a grid layout.<br>
+**Example**
+```
+<div class="flex flex-wrap content-center h-64 gap-4">
+  <p class="bg-blue-500 p-4">One</p>
+  <p class="bg-blue-500 p-4">Two</p>
+  <p class="bg-blue-500 p-4">Three</p>
+  <p class="bg-blue-500 p-4">Four</p>
+</div>
+```
+**Common classes**
+*`content-start` → Aligns **rows at the start**.<br>
+*`content-center` → Aligns the **group of rows in the center**.<br>
+*`content-end → Aligns` **rows at the end**.<br>
+*`content-between` → Adds **equal space between rows**.<br>
+*`content-around` → Adds **space around rows**.<br>
+*`content-evenly` → Adds **equal space around and between rows**.<br>
+*`content-stretch` → Stretches rows to **fill the available space**.<br>
+**Simple rule**<br>
+*`items-` aligns **individual items within a row**.<br>
+*`content-` aligns the group of **rows inside the container**.<br>
+**Note**: `content-*` is most noticeable when the **container has extra height** and its **items wrap into multiple rows**.
