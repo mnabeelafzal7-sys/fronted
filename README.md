@@ -151,3 +151,30 @@ Tailwind CSS's flex-wrap utility is used to move flex items to the next line (wr
 *`w-40` → **sets the width** of each item.<br>
 Simple rule:<br>
 flex-wrap → When there isn't enough space in one row, items move to the next line.
+## 9. **Use justify-**
+Tailwind CSS mein **justify-* utilities** ka use **flex ya grid items ko main axis par align karne** ke liye hota hai.
+**Example**
+```
+<div class="flex justify-center">
+  <div>One</div>
+  <div>Two</div>
+  <div>Three</div>
+</div>
+```
+**Common classes**<br>
+*`justify-start` → Items ko **start mein rakhta hai**.<br>
+*`justify-center` → Items ko **center mein rakhta hai**.<br>
+*`justify-end` → Items ko **end mein rakhta hai**.<br>
+*`justify-between` → Items ke **darmiyan equal space deta hai**.<br>
+*`justify-around` → Items ke **around space deta hai**.<br>
+*`justify-evenly` → Items ke **darmiyan equal space deta hai**.<br>
+**Example with justify-between**
+```
+<div class="flex justify-between">
+  <p>Logo</p>
+  <p>Menu</p>
+</div>
+```
+**Simple rule**:<br>
+*`justify-*` → Items ko** main axis par position/align karne ke** liye use hota hai.<br>
+Important: Agar **flex-row hai**, to main **axis horizontal hoti hai**. Agar **flex-col** hai, to** main axis vertical** hoti hai.
