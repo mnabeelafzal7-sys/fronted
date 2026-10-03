@@ -375,24 +375,24 @@ Common classes<br>
 Remember: `grid-cols-*` defines the grid columns, while `col-span-*` defines how many of those **columns an individual item occupies**.
 ## 18. **Use responsive grids**
 In Tailwind CSS, responsive grid utilities allow you to change the number of columns based on the screen size.<br>
-This helps your layout look good on mobile, tablet, and desktop screens.<br>
-Example
+This helps your layout look good on **mobile, tablet, and desktop screens**.<br>
+**Example**
 ```
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-  <div class="bg-blue-500 p-4">One</div>
-  <div class="bg-red-500 p-4">Two</div>
-  <div class="bg-green-500 p-4">Three</div>
-  <div class="bg-yellow-500 p-4">Four</div>
-  <div class="bg-purple-500 p-4">Five</div>
-  <div class="bg-pink-500 p-4">Six</div>
+  <p class="bg-blue-500 p-4">One</p>
+  <p class="bg-red-500 p-4">Two</p>
+  <p class="bg-green-500 p-4">Three</p>
+  <p class="bg-yellow-500 p-4">Four</p>
+  <p class="bg-purple-500 p-4">Five</p>
+  <p class="bg-pink-500 p-4">Six</p>
 </div>
 ```
 Explanation<br>
-grid → Enables CSS Grid.<br>
-grid-cols-1 → Shows 1 column by default (mobile).<br>
-sm:grid-cols-2 → Shows 2 columns on small screens and larger.<br>
-lg:grid-cols-3 → Shows 3 columns on large screens and larger.<br>
-gap-4 → Adds 16px space between items.<br>
+* `grid` → Enables CSS Grid.<br>
+* `grid-cols-1` → Shows 1 column by default (mobile).<br>
+* `sm:grid-cols-2` → Shows 2 columns on small screens and larger.<br>
+* `lg:grid-cols-3` → Shows 3 columns on large screens and larger.<br>
+* `gap-4` → Adds 16px space between items.<br>
 Responsive breakpoints<br>
 | Prefix |  Minimum screen width |
 | ------ |   --------: |
@@ -402,6 +402,6 @@ Responsive breakpoints<br>
 | `xl:`  |       1280px |
 | `2xl:` |       1536px |
 
-Simple rule<br>
-sm:grid-cols-2 means use 2 columns when the screen reaches the sm breakpoint or wider.<br>
-Remember: Tailwind uses a mobile-first approach. The class without a prefix applies by default, and prefixed classes apply at that breakpoint and larger.
+**Simple rule**<br>
+`sm:grid-cols-2` means use 2 columns when the screen reaches the **sm breakpoint or wider**.<br>
+**Remember:** Tailwind uses a mobile-first approach. The class without a prefix **applies by default, and prefixed classes apply at that breakpoint and larger**.
